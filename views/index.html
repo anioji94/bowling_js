@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bowling</title>
+		<script src="../src/frame.js"></script>
+		<script src="../src/Game.js"></script>
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		
+		<script>
+			$(document).ready(function() {
+				$("#play").click(function() {
+					$("p").html("<p> You are now playing! </p>")
+				});
+
+				$("#quit").click(function() {
+					$("p").html("<p>Welcome to my super high tech bowling game!</p>")
+				});
+			});
+		</script>
+
+</head>
+<body>
+	<h1>Bowling!</h1>
+	<p>Welcome to my super high tech bowling game!</p>
+		<br>
+	<button id="play">Play!</button>
+	<button id="quit">Quit</button>
+		<br>
+		<br>
+	<form>
+		<h3>Frame 1</h3>
+			<br>
+		<b>Roll 1</b> <input type="<text>">
+			<br>
+		<b>Roll 2</b> <input type="text">
+			<br>
+		<input type="submit" value="Roll">
+	</form>
+</body>
+</html>
